@@ -13,6 +13,10 @@ Para restar campos tipo fecha:
 - http://dev.mysql.com/doc/refman/5.5/en/date-and-time-functions.html#function_timediff
 - https://gonzalojpv.wordpress.com/2013/04/14/fechas-con-mysql/
 
+Reportes Moodle
+- https://docs.moodle.org/23/en/ad-hoc_contributed_reports
+
+
 Procesando el log de moodle
 ==============================
 
