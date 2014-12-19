@@ -18,6 +18,7 @@ Procesando el log de moodle
 
 - Crear una vista para apoyarse en los reportes (view name: course_log_activities)
 <pre>
+<code>
 SELECT
   log.id,
   log.time, 
@@ -34,6 +35,7 @@ INNER JOIN mdl_course c ON c.id = log.course
 WHERE module = 'course'
 GROUP BY course, userid, year, month, day,  hour
 ORDER BY  course, userid, time, id  ASC
+</code>
 </pre>
 
 - Para calcular la dedicación a partir de lecturas del log
