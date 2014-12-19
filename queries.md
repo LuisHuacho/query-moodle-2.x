@@ -67,7 +67,6 @@ ORDER BY co.fullname, u.id
 </pre>
 
 - Relación de usuarios con su información, y los cursos matriculados.
-
 <pre>
 <code>
 SELECT  
