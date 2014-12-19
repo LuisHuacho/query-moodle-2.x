@@ -39,7 +39,8 @@ ORDER BY  course, userid, time, id  ASC
 </pre>
 
 - Para calcular la dedicación a partir de lecturas del log
-
+<pre>
+<code>
 SELECT 
   u.firstname as Nombre, 
   u.lastname as Apellido, 
@@ -62,9 +63,13 @@ GROUP BY c.course, c.userid
 INNER JOIN mdl_course co ON co.id = tiempo.course
 WHERE u.id<>'1'
 ORDER BY co.fullname, u.id
+</code>
+</pre>
 
 - Relación de usuarios con su información, y los cursos matriculados.
 
+<pre>
+<code>
 SELECT  
   mue.enrolid,
   erol.enrol,
@@ -85,4 +90,5 @@ INNER JOIN mdl_user u ON u.id = mue.userid
 INNER JOIN mdl_enrol erol ON erol.id = mue.enrolid
 INNER JOIN mdl_course c ON c.id = erol.courseid
 ORDER BY erol.courseid
-
+</code>
+</pre>
